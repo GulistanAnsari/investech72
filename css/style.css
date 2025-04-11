@@ -83,7 +83,7 @@ h6 {
 .banner .logo{
     position: absolute;
     top: 50px;
-    left: 0;
+    /* left: 0; */
 }
 .banner .logo img{
     width: 250px;
@@ -96,7 +96,7 @@ h6 {
     transform: translateY(-50%);
     top: 55%;
     font-size: 44px;
-    width: 100%;
+    width: 90%;
     font-weight: 200;
 }
 .banner h1::before{
