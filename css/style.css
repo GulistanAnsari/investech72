@@ -19,7 +19,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #000;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 ul li,
@@ -37,7 +37,7 @@ h6 {
     font-weight: 400;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1160px;
     padding:0 15px;
     margin: auto;
 }
@@ -54,6 +54,9 @@ h6 {
 }
 .margin-right{
     margin-right: 60px;
+}
+.mt-3{
+    margin-top: 30px;
 }
 .div-6{
     -ms-flex: 0 0 50%;
@@ -98,8 +101,8 @@ h6 {
     top: 15px;
     bottom: 15px;
     /* height: 100%; */
-    width: 5px;
-    background: url(../img/line.svg) no-repeat;    
+    width: 6px;
+    background: url(../img/line.svg);    
 }
 
 #back-to-top {
@@ -178,6 +181,121 @@ footer p a{
     text-decoration: none;
 }
 footer img{
-    height: 20px;
+    height: 15px;
     width: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .container{
+        max-width: unset;
+        padding:0 30px;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    .our-mission .item{
+        height: 180px;
+    }
+    .our-mission h2{
+        font-size: 26px;
+    }
+    .our-mission p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 992px) {
+    .banner h1{
+        font-size: 32px;
+    }
+    .our-mission .item {
+        height: 170px;
+    }
+    .our-mission h2{
+        font-size: 22px;
+        padding-right: 30px;
+    }
+    .our-mission p{
+        font-size: 16px;
+    }
+    .our-mission .border-left::before{
+        left: 90%;
+    }
+}
+@media (max-width: 991px) {
+    .margin-left{
+        margin-left: 50px;
+    }
+    .margin-right{
+        margin-right: 50px;
+    }
+}
+@media (max-width: 767px) {
+    body{
+        font-size: 12px;
+    }
+    .container {
+        padding: 0 40px;
+    }
+    .mt-3 {
+        margin-top: 20px;
+    }
+    .banner h1 {
+        font-size: 28px;
+    }
+    .banner .logo img {
+        width: 200px;
+    }
+    
+    .margin-left{
+        margin-left: 0;
+    }
+    .margin-right{
+        margin-right: 0;
+    }
+    .our-mission {
+        padding: 20px 0;
+    }
+    .our-mission .div-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+    }
+    .our-mission .item {
+        height: unset;
+    }
+    .our-mission .border-left::before{
+        content: unset;
+    }
+    .our-mission h2,
+    .our-mission p{
+        font-size: 15px;
+        font-weight: 300;
+        padding-left: 35px;
+    }
+    .our-mission .item {
+        padding: 20px 0;
+    }
+    .our-mission .item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        margin-left:35px;
+        border-bottom: 1px solid #ccc;
+    }
+    .our-mission h2::before, .our-mission p::before{
+        width: 20px;
+        height: 20px;
+    }
+    #back-to-top{
+        bottom: 30px;
+        right: 30px;
+    }
+    footer img {
+        height: 12px;
+    }
 }
