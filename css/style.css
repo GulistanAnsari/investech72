@@ -16,7 +16,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
     color: #000;
     /* letter-spacing: 1px; */
@@ -179,6 +179,10 @@ footer p{
 footer p a{
     color: #fff;
     text-decoration: none;
+}
+footer p a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
 }
 footer img{
     height: 15px;
